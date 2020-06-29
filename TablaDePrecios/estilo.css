@@ -1,0 +1,109 @@
+ /* Autor: °AlejandroNes° */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+    font-family: "open sans";
+}
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tabla{
+    width: 30%;
+    height: 550px;
+    margin: auto;
+    margin: 0 10px;
+    border: 1px solid rgb(0, 184, 148);
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 4px #343759; */
+    box-shadow: 2px 2px 10px black;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: rgb(16, 172, 132);
+}
+
+.tabla h2{
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.tabla img{
+    width: 64px;
+    margin-bottom: 35px;
+    
+}
+
+.tabla h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.tabla p{
+    display: block;
+    margin-bottom: 30px;
+}
+.boton{
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background-color: white;
+    text-decoration: none;
+    color: rgb(16, 172, 132);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+    border: 1px solid rgb(16, 172, 132);
+}
+
+.boton:active{
+    transform: scale(.8);
+}
+
+.tabla:hover{
+background: rgb(0, 184, 148);
+color: white;
+transition: .5s all;
+transform: scale(1.1);
+cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+    .tabla{
+    width: 45%;
+    max-width: none;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-grow: initial;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .tabla{
+    width: 45%;
+    padding: 30px;
+    }
+    .tabla > h2{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .tabla{
+    width: 85%;
+    padding: 30px;
+    margin-top: 20px;
+
+    }
+}
